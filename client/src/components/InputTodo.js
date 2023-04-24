@@ -20,15 +20,17 @@ export default function InputTodo() {
   
   return (
     <Fragment>
-      <h1 className="text-center mt-5">Pern Todo List</h1>
+      <h1 className="text-center mt-5">PERN Stack Todo List</h1>
       <form className="d-flex mt-5" onSubmit={onSubmitForm}>
         <input
           type="text"
-          className="form-control"
+          className="form-control mr-2"
           value={description}
           onChange={(e) => setDescription(e.target.value)}
+          placeholder="Write the task to add.."
+          required
         />
-        <button className="btn btn-success">Add</button>
+        <button className="btn btn-success p-3">Add</button>
       </form>
     </Fragment>
   );

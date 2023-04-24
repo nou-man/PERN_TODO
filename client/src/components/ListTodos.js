@@ -53,7 +53,7 @@ export default function ListTodos() {
               <td>{todo.description}</td>
               <td><EditTodo todo={todo}/></td>
               <td
-                className="btn btn-danger"
+                className="btn btn-danger my-2"
                 onClick={() => deleteTodo(todo.todoid)}
               >
                 Delete
